@@ -1,0 +1,22 @@
+## .NET / C# Build Artifacts
+**/[Bb]in/
+**/[Oo]bj/
+**/[Oo]ut/
+build/
+
+## Visual Studio & JetBrains Rider
+**/.vs/
+**/.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+## Temporary files & OS
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+.DS_Store
