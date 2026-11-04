@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace DynamicStructures;
+namespace DynamicStructures.Core.DataStructures;
 
 public class Node
 {
