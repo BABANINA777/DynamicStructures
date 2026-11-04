@@ -106,6 +106,6 @@ public class SinglyLinkedList<T>
             current = current.Next;
         }
 
-        return result.Length == 0 ? "Список пуст" : result.ToString();
+        return result.Length == 0 ? "Коллекция пуста" : result.ToString();
     }
 }
