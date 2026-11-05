@@ -15,12 +15,13 @@ while (true)
     Console.WriteLine("1. [Часть 1] Стек: Чтение операций из input.txt с замером времени");
     Console.WriteLine("2. [Часть 1] Стек: Интерактивное управление (Push, Pop, Top, Print, IsEmpty)");
     Console.WriteLine("3. [Часть 1] Постфиксные вычисления (RPN) и перевод Инфикс -> Постфикс");
-    Console.WriteLine("4. [Часть 2] Очередь: Сравнение Своей очереди и Queue<string> на input.txt");
-    Console.WriteLine("5. [Часть 2] Очередь: Сравнительный бенчмарк (разная длина и разный состав)");
-    Console.WriteLine("6. [Часть 2] Очередь: Интерактивное управление (Enqueue, Dequeue, Peek, Print)");
-    Console.WriteLine("7. [Часть 3] Практические применения структур (LRU Cache, Undo/Redo, Принтер, Файлы)");
-    Console.WriteLine("8. [Часть 4] 12 алгоритмов работы со СВОИМИ связными списками (Авто-демо)");
-    Console.WriteLine("9. [Часть 4] 12 алгоритмов связных списков (Интерактивный выбор задачи)");
+    Console.WriteLine("4. [Часть 1] Стек: Сравнительный бенчмарк (разные размеры и составы операций)");
+    Console.WriteLine("5. [Часть 2] Очередь: Сравнение Своей очереди и Queue<string> на input.txt");
+    Console.WriteLine("6. [Часть 2] Очередь: Сравнительный бенчмарк (разная длина и разный состав)");
+    Console.WriteLine("7. [Часть 2] Очередь: Интерактивное управление (Enqueue, Dequeue, Peek, Print)");
+    Console.WriteLine("8. [Часть 3] Практические применения структур (LRU Cache, Undo/Redo, Принтер, Файлы)");
+    Console.WriteLine("9. [Часть 4] 12 алгоритмов работы со СВОИМИ связными списками (Авто-демо)");
+    Console.WriteLine("10. [Часть 4] 12 алгоритмов связных списков (Интерактивный выбор задачи)");
     Console.WriteLine("0. Выход");
     Console.Write("\nВыберите пункт меню: ");
 
@@ -46,26 +47,30 @@ while (true)
             break;
 
         case "4":
-            QueueTaskRunner.CompareBothOnInputFile("input.txt");
+            StackBenchmark.RunFullBenchmarkSuite();
             break;
 
         case "5":
-            QueueTaskRunner.RunFullBenchmarkSuite();
+            QueueTaskRunner.CompareBothOnInputFile("input.txt");
             break;
 
         case "6":
-            RunInteractiveQueue();
+            QueueTaskRunner.RunFullBenchmarkSuite();
             break;
 
         case "7":
-            RunTask3Menu();
+            RunInteractiveQueue();
             break;
 
         case "8":
-            Task4LinkedList.RunAllDemo();
+            RunTask3Menu();
             break;
 
         case "9":
+            Task4LinkedList.RunAllDemo();
+            break;
+
+        case "10":
             RunTask4Interactive();
             break;
 
